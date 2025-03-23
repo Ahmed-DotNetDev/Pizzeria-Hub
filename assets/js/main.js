@@ -94,3 +94,23 @@ sr.reveal(`.about__data`, { origin: 'right' })
 sr.reveal(`.about__img`, { origin: 'left' })
 sr.reveal(`.recipe__list , .contact__image`, { origin: 'left' })
 sr.reveal(`.recipe__img , .contact__data`, { origin: 'right' })
+
+
+/*====================Spinner==================*/
+// window.addEventListener("load", function () {
+
+//     setTimeout(function () {
+//         document.getElementById("loader").style.display = "none";
+//         document.getElementById("content").classList.remove("hidden");
+//     }, 3000); // 3000ms = 3 seconds
+// });
+
+
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        document.getElementById("loader").style.display = "none";
+        setTimeout(function () {
+            document.getElementById("content").classList.remove("hidden");
+        }, 5000);
+    }, 3000);
+});
