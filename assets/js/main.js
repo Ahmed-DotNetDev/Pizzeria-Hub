@@ -86,9 +86,10 @@ const sr = ScrollReveal({
 
 })
 
-sr.reveal(`.home__data, .popular__container , .recipe , .footer__container ,.products__container`)
-sr.reveal(`.home__board`, { delay: 700, distance: '100px', origin: 'right' })
-sr.reveal(`.home__piza`, { delay: 1400, distance: '100px', origin: 'bottom', rotate: { z: -90 } })
+sr.reveal(`.popular__container , .recipe , .footer__container ,.products__container`)
+sr.reveal(`.home__data`, { delay: 2000 })
+sr.reveal(`.home__board`, { delay: 2900, distance: '100px', origin: 'right' })
+sr.reveal(`.home__piza`, { delay: 3000, distance: '100px', origin: 'bottom', rotate: { z: -90 } })
 sr.reveal(`.home__ingredient`, { delay: 2000, interval: 100 })
 sr.reveal(`.about__data`, { origin: 'right' })
 sr.reveal(`.about__img`, { origin: 'left' })
